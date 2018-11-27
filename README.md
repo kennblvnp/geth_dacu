@@ -1,6 +1,4 @@
 
-# Geth_DACU
-
 # Tools  
 geth https://geth.ethereum.org/downloads/  
 
@@ -29,11 +27,11 @@ geth https://geth.ethereum.org/downloads/
 *reference URL: https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options*
 
 **Common commands**
-`admin.nodeInfo`
-`personal.newAccount()`
-`miner.start(1)`
-`miner.stop()`
-`eth.blockNumber`
-`eth.getBlock(eth.blockNumber).miner`
-`admin.addPeer("enode:.....<ip_address>:<port>")`
-`admin.peers`
+`admin.nodeInfo`  
+`personal.newAccount()`  
+`miner.start(1)`  
+`miner.stop()`  
+`eth.blockNumber`  
+`eth.getBlock(eth.blockNumber).miner`  
+`admin.addPeer("enode:.....<ip_address>:<port>")`  
+`admin.peers`  
