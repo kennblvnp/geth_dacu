@@ -2,7 +2,7 @@
 # Tools  
 geth https://geth.ethereum.org/downloads/  
 
-# Deploy Genesis Block (node 1) 
+# Initialize Genesis Block (node 1) 
 `geth --datadir "<project>/<directory>/node1" init genesis_puppeth.json`
 
 > A **genesis block** is the first **block** of a **block** chain. Modern versions of Bitcoin number it as **block** 0, though very early versions counted it as **block** 1. The**genesis block** is almost always hardcoded into the software of the applications that utilize its **block**chain.
@@ -16,7 +16,7 @@ geth https://geth.ethereum.org/downloads/
 > - rpccorsdomain - allow your web browser to get access to your local Ethereum node 
 > (eg. --rpccorsdomain "*.myetherwallet.com,*.ethereum.org")  
 
-# Deploy Genesis Block (node 2) 
+# Initialize Genesis Block (node 2) 
 `geth --datadir "<project>/<directory>/node2" init genesis_puppeth.json`  
 
 # Enable Blockchain RPC (node 2) 
