@@ -26,7 +26,7 @@ geth https://geth.ethereum.org/downloads/
 ## basic console commands
 *reference URL: https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options*
 
-**Common commands**
+**Common commands**  
 `admin.nodeInfo`  
 `personal.newAccount()`  
 `miner.start(1)`  
