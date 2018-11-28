@@ -14,7 +14,7 @@ geth
 >
 > **EIPs** Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards. (https://eips.ethereum.org/)
 
-# Genesis block Explanation
+## Genesis block Explanation
 
 **mixhash**  A 256-bit hash which proves, combined with the  `nonce`, that a sufficient amount of computation has been carried out on this block: the Proof-of-Work (PoW). The combination of  `nonce`  and  `mixhash`  must satisfy a mathematical condition described in the Yellowpaper, 4.3.4. Block Header Validity, (44). It allows to verify that the Block has really been cryptographically mined, thus, from this aspect, is valid.
 
@@ -33,6 +33,8 @@ geth
 **extraData**  An optional free, but max. 32-byte long space to conserve smart things for ethernity. :)
 
 **gasLimit**  A scalar value equal to the current chain-wide limit of Gas expenditure per block. High in our case to avoid being limited by this threshold during tests. Note: this does not indicate that we should not pay attention to the Gas consumption of our Contracts.
+
+Reference: https://ethereum.stackexchange.com/questions/2376/what-does-each-genesis-json-parameter-mean
 
 # Enable Blockchain RPC (node 1) 
 `geth --datadir "<project>/<directory>/node1" --networkid 5432 --rpc --rpcport 5000 --rpcaddr 127.0.0.1 --rpccorsdomain "*" console 2>console.log`
