@@ -1,6 +1,5 @@
-
-
-
+# WHAT IS GETH?
+**Geth** is a multipurpose command line tool that runs a full Ethereum node implemented in Go. It offers three interfaces: the command line subcommands and options, a Json-rpc server and an interactive console.  
 
 # Tools  
 geth 
