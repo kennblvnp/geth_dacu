@@ -57,7 +57,8 @@ Reference: https://ethereum.stackexchange.com/questions/2376/what-does-each-gene
 
 **Common commands**  
 `admin.nodeInfo`  
-`personal.newAccount()`  
+`personal.newAccount()` 
+`eth.getBalance(eth.accounts[0])` 
 `miner.start()`  
 `miner.stop()`  
 `eth.blockNumber`  
