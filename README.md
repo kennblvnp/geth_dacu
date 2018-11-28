@@ -67,6 +67,7 @@ geth
 **Common commands**  
 `admin.nodeInfo`   
 `personal.newAccount()`   
+`eth.accounts`  
 `eth.getBalance(eth.accounts[0])`   
 `miner.start()`  
 `miner.stop()`  
