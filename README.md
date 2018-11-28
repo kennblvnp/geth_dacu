@@ -7,7 +7,7 @@ geth
 - (mac) https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac
 
 # Initialize Genesis Block (node 1) 
-`geth --datadir "<project>/<directory>/node1" init genesis_puppeth.json`
+`geth --datadir "<project>/<directory>/node1" init genesis.json`
 
 > A **genesis block** is the first **block** of a **block** chain. Modern versions of Bitcoin number it as **block** 0, though very early versions counted it as **block** 1. The**genesis block** is almost always hardcoded into the software of the applications that utilize its **block**chain.
 >
@@ -47,7 +47,7 @@ geth
 > (eg. --rpccorsdomain "*.myetherwallet.com,*.ethereum.org")  
 
 # Initialize Genesis Block (node 2) 
-`geth --datadir "<project>/<directory>/node2" init genesis_puppeth.json`  
+`geth --datadir "<project>/<directory>/node2" init genesis.json`  
 
 # Enable Blockchain RPC (node 2) 
 `geth --datadir "<project>/<directory>/node2" --port 30304 --networkid 5432 --rpcport 5000 --rpcaddr 127.0.0.1 console 2>console.log`  
