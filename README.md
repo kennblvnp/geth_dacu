@@ -57,9 +57,9 @@ geth
 *reference URL: https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options*
 
 **Common commands**  
-`admin.nodeInfo`  
-`personal.newAccount()` 
-`eth.getBalance(eth.accounts[0])` 
+`admin.nodeInfo`   
+`personal.newAccount()`   
+`eth.getBalance(eth.accounts[0])`   
 `miner.start()`  
 `miner.stop()`  
 `eth.blockNumber`  
