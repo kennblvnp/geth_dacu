@@ -1,6 +1,7 @@
 
 
 
+
 # Tools  
 geth 
 - (windows, linux, mac) https://geth.ethereum.org/downloads/  
@@ -52,6 +53,13 @@ geth
 # Enable Blockchain RPC (node 2) 
 `geth --datadir "<project>/<directory>/node2" --port 30304 --networkid 5432 --rpcport 5000 --rpcaddr 127.0.0.1 console 2>console.log`  
 
+> There are basically three important ports. The first is discovery port, and other two are listener ports:
+> 
+> **Discovery port**: (default is 30303). This port is used for connecting to other geth nodes.
+**RPC port**: (default is 8545). This port is used to send JSON-rpc requests to the geth client.
+**Websocket port**: (default is 8546) You can connect to geth client using websockets.
+>
+>All of them are independent process and hence cannot be run on same ports.  
 
 ## basic console commands
 *reference URL: https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options*
