@@ -1,11 +1,15 @@
 
 # Tools  
-geth https://geth.ethereum.org/downloads/  
+geth 
+- (windows, linux, mac) https://geth.ethereum.org/downloads/  
+- (mac) https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac
 
 # Initialize Genesis Block (node 1) 
 `geth --datadir "<project>/<directory>/node1" init genesis_puppeth.json`
 
 > A **genesis block** is the first **block** of a **block** chain. Modern versions of Bitcoin number it as **block** 0, though very early versions counted it as **block** 1. The**genesis block** is almost always hardcoded into the software of the applications that utilize its **block**chain.
+>
+> A **node** is a device on a blockchain network, that is in essence the foundation of the technology, allowing it to function and survive. ... Nodes are often arranged in the structure of trees, known as binary trees. Each cryptocurrency has its own nodes, maintaining the transaction records of that particular token.
 
 # Enable Blockchain RPC (node 1) 
 `geth --datadir "<project>/<directory>/node1" --networkid 5432 --rpc --rpcport 5000 --rpcaddr 127.0.0.1 --rpccorsdomain "*" console 2>console.log`
@@ -29,7 +33,7 @@ geth https://geth.ethereum.org/downloads/
 **Common commands**  
 `admin.nodeInfo`  
 `personal.newAccount()`  
-`miner.start(1)`  
+`miner.start()`  
 `miner.stop()`  
 `eth.blockNumber`  
 `eth.getBlock(eth.blockNumber).miner`  
